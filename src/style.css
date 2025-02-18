@@ -1,0 +1,100 @@
+@import 'tailwindcss';
+@import './styles/font.css';
+
+/* https://onvia.nl/functionaliteiten/ */
+
+:root {
+    font-family: 'Sofia Pro Light', Helvetica, Arial, Lucida, sans-serif;
+    --c-purple-heart: #5621c4;
+    --c-purple-heart-50: #f4f3ff;
+    --c-purple-heart-200: #dad5ff;
+    --c-purple-heart-300: #beb4fe;
+
+    --br-sm: 6px;
+    --br-lg: 12px;
+}
+
+body {
+    background-image: url('./assets/bg-shape.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.employee-table {
+    width: 100%;
+
+    td:first-child,
+    th:first-child {
+        padding-inline-start: 2rem;
+    }
+
+    td:last-child,
+    th:last-child {
+        padding-inline-end: 2rem;
+    }
+
+    th {
+        height: 3.75rem;
+        text-align: start;
+    }
+
+    tr {
+        height: 3.25rem;
+
+        &:not(:last-child) {
+            border-block-end: 1px solid var(--c-purple-heart-200);
+        }
+    }
+
+    td:has(.employee-table__tag + .employee-table__tag) {
+        span:not(:first-child) {
+            margin-inline-start: 0.5rem;
+        }
+    }
+
+    .employee-table__tag {
+        background-color: var(--c-purple-heart);
+        padding: 0.5rem;
+        border-radius: 12px;
+        color: white;
+        font-size: 0.75rem;
+    }
+
+    tr:has(+ tr .employee-table__button:hover) {
+        border-color: transparent;
+    }
+
+    tr:has(.employee-table__button:hover) {
+        border-color: transparent;
+    }
+
+    .employee-table__button {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        inset: 0;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+    }
+}
+
+.container {
+    max-width: 1366px;
+    margin: auto;
+    padding-block: 4rem;
+    padding-inline: 2rem;
+
+    @media (width >= 64rem) {
+        padding-inline: 4rem;
+    }
+}
+
+input {
+    border: 1px solid var(--c-purple-heart-200);
+    border-radius: var(--br-sm);
+    padding: 0.5rem 1rem;
+    background-color: white;
+}
