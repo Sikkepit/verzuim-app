@@ -84,14 +84,14 @@ function parseValue(value: any, header: Header) {
         <div class="flex">
             <input type="text" v-model="searchValue" placeholder="Zoek op naam of geboortedatum" class="w-96 ml-auto">
         </div>
-        <div class="bg-white rounded-3xl p-12 shadow-lg overflow-auto">
+        <div class="bg-white rounded-3xl py-12 px-8 shadow-lg overflow-auto">
             <table class="employee-table min-w-[1024px]">
                 <thead>
                     <th v-for="header in headers">{{ header.label }}</th>
                 </thead>
 
                 <tbody>
-                    <tr v-for="employee in filteredEmployees" class="relative">
+                    <tr v-for="employee in filteredEmployees">
                         <td v-for="(header, index) in headers">
                             <button v-if="index === 0" class="employee-table__button"></button>
                             <span v-html="parseValue(employee[header.id], header)" />

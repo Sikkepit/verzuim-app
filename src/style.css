@@ -25,12 +25,12 @@ body {
 
     td:first-child,
     th:first-child {
-        padding-inline-start: 2rem;
+        padding-inline-start: 3rem;
     }
 
     td:last-child,
     th:last-child {
-        padding-inline-end: 2rem;
+        padding-inline-end: 3rem;
     }
 
     th {
@@ -39,7 +39,8 @@ body {
     }
 
     tr {
-        height: 3.25rem;
+        height: 3.75rem;
+        position: relative;
 
         &:not(:last-child) {
             border-block-end: 1px solid var(--c-purple-heart-200);
