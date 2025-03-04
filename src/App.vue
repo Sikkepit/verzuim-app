@@ -95,9 +95,11 @@ function clearFilters() {
                 <FilterButton :options="getUniqueActions()" ref="actionFilter"
                     >Acties</FilterButton
                 >
+
                 <FilterButton :options="getUniqueStatuses()" ref="statusFilter"
                     >Status</FilterButton
                 >
+
                 <ClearFilterButton
                     v-if="
                         statusFilter?.selectedOptions.length ||
@@ -107,6 +109,7 @@ function clearFilters() {
                     @clear-filters="clearFilters"
                 />
             </div>
+
             <SearchBar
                 ref="searchBar"
                 @update-query="(query) => (searchValue = query)"
