@@ -92,12 +92,12 @@ function clearFilters() {
 
         <div class="flex mt-6">
             <div class="flex gap-1 items-center">
-                <FilterButton :options="getUniqueActions()" ref="actionFilter"
-                    >Acties</FilterButton
-                >
-
                 <FilterButton :options="getUniqueStatuses()" ref="statusFilter"
                     >Status</FilterButton
+                >
+
+                <FilterButton :options="getUniqueActions()" ref="actionFilter"
+                    >Acties</FilterButton
                 >
 
                 <ClearFilterButton
