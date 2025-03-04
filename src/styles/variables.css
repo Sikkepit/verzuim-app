@@ -1,0 +1,18 @@
+:root {
+    font-family: 'Sofia Pro Light', Helvetica, Arial, Lucida, sans-serif;
+    --c-purple-heart: #5621c4;
+    --c-purple-heart-50: #f4f3ff;
+    --c-purple-heart-100: #ece9fe;
+    --c-purple-heart-200: #dad5ff;
+    --c-purple-heart-300: #beb4fe;
+    --c-lima-50: #f3fdf0;
+    --c-lima-100: #e2fcdc;
+    --c-lima: #3ec421;
+    --c-lima-800: #236516;
+    --c-white: #ffffff;
+    --c-black: #000000;
+    --shadow-md: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    --br-sm: 6px;
+    --br-lg: 12px;
+}

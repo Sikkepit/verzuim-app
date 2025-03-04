@@ -1,0 +1,23 @@
+.filter__dropdown {
+    position: absolute;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-in-out;
+    width: 250px;
+    z-index: 2;
+    inset-block-start: 49px;
+    inset-inline-start: 14px;
+    box-shadow: var(--shadow-md);
+
+    &.filter__dropdown--open {
+        grid-template-rows: 1fr;
+    }
+}
+
+.filter__list-wrapper {
+    display: grid;
+    gap: 0.5rem;
+    background-color: var(--c-white);
+    border: 1px solid var(--c-purple-heart);
+    padding: 1rem;
+}

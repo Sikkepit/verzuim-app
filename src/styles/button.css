@@ -1,0 +1,21 @@
+button {
+    cursor: pointer;
+}
+
+.btn {
+    background-color: var(--c-purple-heart);
+    color: var(--c-white);
+    padding: 0.5rem 1.25rem;
+    border-radius: 1.25rem;
+    font-weight: 600;
+    border: 1px solid var(--c-purple-heart);
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+    &.btn--outline {
+        background-color: var(--c-white);
+        border-color: var(--c-purple-heart);
+        color: var(--c-purple-heart);
+    }
+}

@@ -1,0 +1,9 @@
+.icon {
+    fill: currentColor;
+    flex-shrink: 0;
+    transition: transform 0.25s;
+}
+
+.icon--rotate {
+    transform: rotate(180deg);
+}

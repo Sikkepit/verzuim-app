@@ -1,0 +1,16 @@
+body {
+    background-color: var(--c-purple-heart-50);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container {
+    max-width: 1366px;
+    margin: auto;
+    padding-block: 4rem;
+    padding-inline: 2rem;
+
+    @media (width >= 64rem) {
+        padding-inline: 4rem;
+    }
+}

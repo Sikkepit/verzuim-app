@@ -1,0 +1,11 @@
+input {
+    border: 1px solid var(--c-purple-heart-200);
+    border-radius: var(--br-sm);
+    padding: 0.5rem 1rem;
+    background-color: white;
+    accent-color: var(--c-purple-heart);
+}
+
+label {
+    cursor: pointer;
+}
